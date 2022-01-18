@@ -37,23 +37,19 @@
   }
 }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Roboto+Condensed:wght@300&display=swap');
 
 :root {
   --primary-white: #ffffff;
-  --primary-green: #33FF99;
+  --primary-gray: #A0A0A0;
   --primady-dark: rgba(255,255,255, 0);
+  --primary-green: #33FF99;
+  --primary-red: #ef4035;
+  --primary-hover-red: #ff0000;
 }
 
 body {
   font-family: "Roboto Condensed" sans-serif;
-}
-/*************************** NAVBAR ***************************/
-
-.logo {
-  width: 16.25rem;
-
 }
 
 
@@ -91,4 +87,75 @@ nav ul li {
 
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-green);
+}
+
+/*************************** HEADER ***************************/
+
+.header-wraper {
+  position: relative;
+  background: url(background.jpg) no-repeat;
+  background-size: cover;
+  background-position: right; /* 'center' is prefered */
+  height: 90vh;
+  opacity: 95%;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condensed" sans-serif;
+}
+
+.main-info h1 {
+  color: var(--primary-white);
+  text-transform: uppercase;
+}
+
+/*************************** @MEDIA PROPERTIES ***************************/
+
+@media(max-width: 768px) {
+  .main-info h1 { 
+    font-size: 1.5rem !important;
+  }
+}
+
+/*************************** TYPED TEXT AND LOGO ***************************/
+
+.typed-text {
+  /* font-size: 2rem; */
+  color: var(--primary-gray);  
+}
+
+.typed-logo {
+  font-size: 3rem; 
+  color: var(--primary-white);
+  font-family: 'Comforter Brush', cursive;
+  position: relative;
+  top: 20px;
+}
+
+/*************************** HEADER MAIN OFFER BUTTON ***************************/
+
+.btn-main-offer {  
+  border-radius: 3px;
+  text-transform: uppercase;  
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+  text-decoration: none;
+  background-color: var(--primary-red);
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  color: var(--primary-white);
 }
