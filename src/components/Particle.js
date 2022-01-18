@@ -12,17 +12,13 @@ const Particle = () => {
     console.log(container);
   };  
   return (
-    <Particles
+    <Particles      
       id="tsparticles"
       className="tsparticles-canvas"
       init={particlesInit}
-      loaded={particlesLoaded}
-      options={{
-        background: {
-          color: {
-            value: "#0d47a1",
-          },
-        },
+      loaded={particlesLoaded}      
+      options={{    
+        fullScreen: { enable: false },            
         fpsLimit: 60,
         interactivity: {
           events: {
@@ -77,9 +73,9 @@ const Particle = () => {
           number: {
             density: {
               enable: true,
-              area: 800,
+              area: 900,
             },
-            value: 80,
+            value: 40,
           },
           opacity: {
             value: 0.5,
