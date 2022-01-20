@@ -45,7 +45,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                How i work?
+                My Experience
               </a>
             </li>
             <li className="nav-item">
