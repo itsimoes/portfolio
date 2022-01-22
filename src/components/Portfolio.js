@@ -87,9 +87,9 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="portfolio-wrapper">
+    <div id="portfolio" className="portfolio-wrapper">
       <div className="container">
-        <h1 className="text-uppercase text-center py-5">portfolio</h1>
+        <h1 className="text-center py-5">portfolio</h1>
         <div className="image-box-wrapper row row-cols-auto justify-content-center">
           <div className="portfolio-image-box " onClick={openPopupbox01}>
             <img
