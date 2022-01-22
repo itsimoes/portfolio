@@ -87,7 +87,7 @@ nav ul li {
 
 /* active link color */
 
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
   border-top: 0.1875rem solid var(--primary-green);
 }
 
@@ -102,7 +102,7 @@ nav ul li {
   background: url(img/background.jpg) no-repeat;
   background-size: cover;
   background-position: right; /* 'center' is prefered */
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -400,6 +400,10 @@ nav ul li {
   cursor: pointer;
 }
 
+.popupbox-wrapper {
+  margin-top: 7rem;  
+}
+
 /*************************** PORTFOLIO ***************************/
 
 .portfolio-wrapper .container h1 {
@@ -430,7 +434,7 @@ nav ul li {
 }
 
 @media(max-heigth: 570px){
-  .popupbor-wrapper {
+  .popupbox-wrapper {
     height: 100%;    
   }
 
@@ -614,4 +618,26 @@ textarea.form-control {
   .contacts p {
     padding: 0 0.4 rem;
   }
+}
+
+/*************************** FOOTER ***************************/
+
+.footer {
+  color: var(--primary-grey);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-grey);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-green);
+  cursor: pointer;
+}
+
+.footer p {
+  margin-bottom: 0;
 }
