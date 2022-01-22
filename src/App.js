@@ -1,9 +1,31 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import Particle from "./components/Particle";
+import AboutMe from "./components/AboutMe"; 
+import Services from "./components/Services";
+import Experience from "./components/Experience";
+import Portfolio from "./components/Portfolio";
+import Testimonials from "./components/Testimonials";
+import Contacts from "./components/Contacts";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-   <h2>Meu portfólio em construção...</h2>
+    <>
+      <Particle />
+      <Navbar />
+      <Header />
+      <AboutMe />
+      <Services />
+      <Experience />
+      <Portfolio />
+      <Testimonials />
+      <Contacts />
+      <Footer />
+    </>
   );
 }
 
