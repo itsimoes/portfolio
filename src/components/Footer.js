@@ -13,17 +13,17 @@ import {
 
 const Footer = () => {
   return (
-    <div className="footer bg-dark">
+    <div className="footer">
       <div className="container">
         <div className="row">
           <div className="col-lg-4 col md-6 col-sm-6">
             <div className="d-flex">
-              <p>city&nbsp;</p>
+              <p>cidade&nbsp;</p>
               <a
-                href="https://www.google.com/maps/d/embed?mid=1XH_bAZUfA2ykSenaRYg8GRbDWwA&ehbc=2E312F"
+                href="https://goo.gl/maps/3Qd33CANHZbJfGPy5"
                 target="_blank"
               >
-                São Luís, MA
+                Urbano Santos, MA
               </a>
             </div>
             <div className="d-flex">
@@ -41,16 +41,16 @@ const Footer = () => {
                 </Link>
                 <br />
                 <Link className="footer-nav" smooth={true} to="about" offset={-110} href="#">
-                  About me
+                  Sobre mim
                 </Link>
                 <br />
                 <Link className="footer-nav" smooth={true} to="services" offset={-110} href="#">
-                  My Services
+                  Serviços
                 </Link>
               </div>
               <div className="col">
                 <Link className="footer-nav" smooth={true} to="experience" offset={-110} href="#">
-                  My Experience
+                  Experiência
                 </Link>
                 <br />
                 <Link className="footer-nav" smooth={true} to="portfolio" offset={-110} href="#">
@@ -58,13 +58,13 @@ const Footer = () => {
                 </Link>
                 <br />
                 <Link className="footer-nav" smooth={true} to="contacts" offset={-110} href="#">
-                  Contacts
+                  Contato
                 </Link>
               </div>
             </div>
           </div>
           <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
-            <div className="d-flex justify-content-center">
+            <div className="footer-icons d-flex justify-content-center">
               <FacebookShareButton 
                 url={"#"}
                 quote={"Front-End Developer"}
@@ -94,7 +94,7 @@ const Footer = () => {
                   <LinkedinIcon className="mx-3" size={36} borderRadius={10} />
               </LinkedinShareButton>
             </div>
-            <p className="pt-3 text-center">
+            <p className="footer-icons pt-3 text-center">
                 Copyright&copy;
                 {new Date().getFullYear()}&nbsp;Ítalo Simões | All Rights Reserved
             </p>

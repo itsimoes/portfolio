@@ -6,7 +6,7 @@ import { faDesktop, faFileCode } from "@fortawesome/free-solid-svg-icons";
 const Services = () => {
   return (
     <div id="services" className="services">
-      <h1 className="py-5">my services</h1>
+      <h1 className="py-5">serviços</h1>
       <div className="container">
         <div className="row">
           <div className="col-lg-3 col-md-6 col-sm-6">
@@ -16,8 +16,7 @@ const Services = () => {
               </div>
               <h3>Web Design</h3>
               <p>
-                I approach each project individually and always focus on the
-                result.
+                Projetos elaborados individualmente e com foco sempre nos resultados.
               </p>
             </div>
           </div>
@@ -28,7 +27,7 @@ const Services = () => {
                 <FontAwesomeIcon className="icon" icon={faFileCode} size="2x" />
               </div>
               <h3>Web Development</h3>
-              <p>You Website will be build with all new proven technologies.</p>
+              <p>Seu Website será desenvolvido utilizando as tecnologias mais recentes.</p>
             </div>
           </div>
           {/* - */}
@@ -39,8 +38,7 @@ const Services = () => {
               </div>
               <h3>Facebook Ads SSM</h3>
               <p>
-                Your potential clients will see your services or product on
-                Facebook.
+                Seus clientes em potencial irão ver seu produto no facebook.
               </p>
             </div>
           </div>
@@ -52,8 +50,7 @@ const Services = () => {
               </div>
               <h3>Google Ads</h3>
               <p>
-                Your services or product will appear at the top of the Google
-                Search.
+                Seus produtos ou serviços irão aparecer no topo do buscador da Google.
               </p>
             </div>
           </div>

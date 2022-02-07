@@ -43,10 +43,10 @@ const Contacts = () => {
   return (
     <div id="contacts" className="contacts">
       <div className="text-center">
-        <h1>Contact me</h1>
+        <h1>Contato</h1>
         <p>
-          Plase fill out the form and describe your project and I'll contact you
-          as soon as possible.
+          Por favor, preencha o formulário baixo e descreva seu projeto para que
+          eu possa lhe contactar o mais rápido possível.
         </p>
         <span className="success-message">{successMessage}</span>
       </div>
@@ -59,15 +59,15 @@ const Contacts = () => {
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Name"
+                  placeholder="Nome"
                   name="name"
                   aria-invalid={errors.name ? "true" : "false"}
                   {...register("name", {
-                    required: "Please enter your name.",
+                    required: "Por favor, preencha seu nome.",
                     maxLength: {
                       value: 30,
                       message:
-                        "Please enter a name with less than 30 characters.",
+                        "Por favor, preencha ccom um nome com menos de 30 caracteres.",
                     },
                   })}
                 />
@@ -81,11 +81,11 @@ const Contacts = () => {
                 <input
                   type="number"
                   className="form-control"
-                  placeholder="Phone Number"
+                  placeholder="Telefone"
                   name="phone"
                   aria-invalid={errors.phone ? "true" : "false"}
                   {...register("phone", {
-                    required: "Please add your phone number.",
+                    required: "Por favor, adicione seu número de telefone.",
                   })}
                 />
                 <div className="line"></div>
@@ -102,10 +102,10 @@ const Contacts = () => {
                   name="email"
                   aria-invalid={errors.email ? "true" : "false"}
                   {...register("email", {
-                    required: "Please add your email.",
+                    required: "Por favor, adicione seu email.",
                     pattern: {
                       value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                      message: "Invalid Email!"
+                      message: "Email inválido!",
                     },
                   })}
                 />
@@ -119,10 +119,10 @@ const Contacts = () => {
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Subject"
-                  name="subject"
+                  placeholder="Assunto"
+                  name="Assunto"
                   {...register("subject", {
-                    required: "OOPS, you forget to add the subject.",
+                    required: "OOPS, você esqueceu de adicionar o assunto!",
                   })}
                 />
                 <div className="line"></div>
@@ -137,10 +137,10 @@ const Contacts = () => {
                 <textarea
                   type="text"
                   className="form-control"
-                  placeholder="Description"
+                  placeholder="Descrição"
                   name="description"
                   {...register("description", {
-                    required: "Please, describe shortly your project needs....",
+                    required: "Por favor, descreva brevemente seu projeto...",
                   })}
                 ></textarea>
                 <div className="line"></div>
@@ -148,10 +148,10 @@ const Contacts = () => {
               <span className="error-message">
                 {errors.description && errors.description.message}
               </span>
-              <button className="btn-main-offer contact-btn" type="submit">
-                contact me
-              </button>
             </div>
+            <button className="btn-main-offer contact-btn" type="submit">
+              Enviar formulário
+            </button>
           </div>
         </form>
       </div>

@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-light fixed-top">
       <div className="container">
         <a className="navbar-brand" >
           <Typed
@@ -24,7 +24,7 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <FontAwesomeIcon icon={faBars} style={{ color: "#ffffff" }} />
+          <FontAwesomeIcon icon={faBars} style={{ color: "#A0A0A0" }} />
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -36,17 +36,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <Link className="nav-link" smooth={true} to="about" offset={-110} href="#" >
-                About Me
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" smooth={true} to="services" offset={-110} href="#" >
-                My Services
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" smooth={true} to="experience" offset={-110} href="#" >
-                My Experience
+                Sobre mim
               </Link>
             </li>
             <li className="nav-item">
@@ -55,8 +45,18 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
+              <Link className="nav-link" smooth={true} to="services" offset={-110} href="#" >
+                Serviços
+              </Link>
+            </li>
+            {/* <li className="nav-item">
+              <Link className="nav-link" smooth={true} to="experience" offset={-110} href="#" >
+                Experiência
+              </Link>
+            </li> */}            
+            <li className="nav-item">
               <Link className="nav-link" smooth={true} to="contacts" offset={-110} href="#" >
-                Contact
+                Contato
               </Link>
             </li>
           </ul>
